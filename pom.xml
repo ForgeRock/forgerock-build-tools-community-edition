@@ -17,7 +17,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.forgerock</groupId>
+    <groupId>org.forgerock.ce</groupId>
     <artifactId>forgerock-parent</artifactId>
     <version>1.0.0</version>
   </parent>
@@ -31,9 +31,9 @@
   </description>
   <url>http://commons.forgerock.org/i18n-framework</url>
   <scm>
-    <url>https://svn.forgerock.org/commons/forgerock-build-tools/tags/1.0.0</url>
-    <connection>scm:svn:https://svn.forgerock.org/commons/forgerock-build-tools/tags/1.0.0</connection>
-    <developerConnection>scm:svn:https://svn.forgerock.org/commons/forgerock-build-tools/tags/1.0.0</developerConnection>
+    <url>https://github.com/ForgeRock/forgerock-build-tools-community-edition</url>
+    <connection>scm:git://github.com:ForgeRock/forgerock-build-tools-community-edition.git</connection>
+    <developerConnection>scm:git://github.com:ForgeRock/forgerock-build-tools-community-edition.git</developerConnection>
   </scm>
   <ciManagement>
     <system>jenkins</system>
@@ -50,20 +50,9 @@
   </ciManagement>
   <repositories>
     <repository>
-      <id>forgerock-staging-repository</id>
+      <id>forgerock-community-repository</id>
       <name>ForgeRock Release Repository</name>
-      <url>http://maven.forgerock.org/repo/releases</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>forgerock-snapshots-repository</id>
-      <name>ForgeRock Snapshot Repository</name>
-      <url>http://maven.forgerock.org/repo/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
+      <url>http://maven.forgerock.org/repo/community</url>
     </repository>
   </repositories>
   <build>
